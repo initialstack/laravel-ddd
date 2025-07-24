@@ -25,7 +25,11 @@ final class UserResource extends JsonResource
             'name' => $user->name,
             'email' => $user->email->asString(),
             'role' => $this->whenNotNull(
-                value: $user->role?->name
+                value: $user->role !== null ? [
+                    'id' => $user->role->id,
+                    'name' => $user->role->name,
+                    'slug' => $user->role->slug
+                ] : null
             ),
             'datetime' => [
                 'created_at' => $user->createdAt?->format(
