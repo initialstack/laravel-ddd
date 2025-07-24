@@ -26,9 +26,9 @@ final class UserResource extends JsonResource
             'email' => $user->email->asString(),
             'role' => $this->whenNotNull(
                 value: $user->role !== null ? [
-                    'id' => $user->role->id,
+                    'id' => $user->role->id->asString(),
                     'name' => $user->role->name,
-                    'slug' => $user->role->slug
+                    'slug' => $user->role->slug->asString()
                 ] : null
             ),
             'datetime' => [
