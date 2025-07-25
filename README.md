@@ -95,7 +95,6 @@ $ make help
 | make start          | Start containers                                 |
 | make stop           | Stop and remove containers and volumes           |
 | make restart        | Restart all containers                           |
-| make help           | Show available make commands and options         |
 
 ## Additional Notes
 
