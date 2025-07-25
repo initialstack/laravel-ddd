@@ -2,7 +2,7 @@
 
 namespace App\Account\Application\Register;
 
-use App\Shared\Application\Job\Job;
+use App\Shared\Application\Queue\Queue;
 use App\Shared\Domain\Slug\RoleSlug;
 use App\Account\Domain\User;
 use App\Account\Domain\Repository\RoleRepositoryInterface;
@@ -10,7 +10,7 @@ use App\Account\Domain\Repository\UserRepositoryInterface;
 use App\Account\Domain\Email\Email;
 use App\Account\Domain\Password\Password;
 
-final class RegisterJob extends Job
+final class RegisterQueue extends Queue
 {
     /**
      * Create a new registration job instance.
