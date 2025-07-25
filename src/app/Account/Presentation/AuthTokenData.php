@@ -52,9 +52,7 @@ final class AuthTokenData
         }
 
         if (isset($this->message) && $this->message !== '') {
-            return [
-                'message' => $this->message,
-            ];
+            return ['message' => $this->message];
         }
 
         return [];
