@@ -49,7 +49,7 @@ final class AuthAccessControl extends Middleware
             default => false,
         };
 
-        if (! $access) {
+        if (!$access) {
             abort(
                 code: Response::HTTP_FORBIDDEN,
                 message: 'Access denied.'

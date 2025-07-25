@@ -24,7 +24,7 @@ final class RegisterResponder
 
         return new MessageResponse(
             message: 'Registration failed. Try again.',
-            status: Response::HTTP_BAD_REQUEST
+            status: Response::HTTP_INTERNAL_SERVER_ERROR
         );
 	}
 }

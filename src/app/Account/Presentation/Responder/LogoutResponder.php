@@ -24,7 +24,7 @@ final class LogoutResponder
 
         return new MessageResponse(
             message: 'Logout failed. Please try again.',
-            status: Response::HTTP_BAD_REQUEST
+            status: Response::HTTP_INTERNAL_SERVER_ERROR
         );
     }
 }
