@@ -16,7 +16,7 @@ final class RegisterHandler extends Handler
     public function handle(RegisterCommand $command): bool
     {
         try {
-            RegisterQueue::dispatch($command);
+            RegisterJob::dispatch($command);
 
             return true;
         }
