@@ -4,23 +4,23 @@ A robust starter kit for Laravel 12 (PHP 8.4) featuring Hexagonal Architecture, 
 
 ## Features
 
-- **Laravel 12** with PHP 8.4 support  
-- **Hexagonal (Ports & Adapters) Architecture** for better modularity  
-- **Domain-Driven Design (DDD)**  
-- **CQRS** (Command and Query Responsibility Segregation)  
-- **Action-Domain-Responder** pattern for clear code responsibility separation  
-- **Doctrine ORM** integrated for powerful object-relational mapping  
-- Out-of-the-box **Docker** support (NGINX, PostgreSQL, RabbitMQ, Redis)  
-- JWT Auth, Redis cache  
-- Includes developer tools: Pint, PHPStan, PHPUnit, and more  
+- **Laravel 12** with PHP 8.4 support
+- **Hexagonal (Ports & Adapters) Architecture** for better modularity
+- **Domain-Driven Design (DDD)**
+- **CQRS** (Command and Query Responsibility Segregation)
+- **Action-Domain-Responder** pattern for clear code responsibility separation
+- **Doctrine ORM** integrated for powerful object-relational mapping
+- Out-of-the-box **Docker** support (NGINX, PostgreSQL, RabbitMQ, Redis)
+- JWT Auth, Redis cache
+- Includes developer tools: Pint, PHPStan, PHPUnit, and more
 
 ## Quick Start
 
 ### Prerequisites
 
-- Docker & Docker Compose installed  
-- Bash (for cert script)  
-- Optional: g++ (if not available, an alternative method is provided)  
+- Docker & Docker Compose installed
+- Bash (for cert script)
+- Optional: g++ (if not available, an alternative method is provided)
 
 ### 1. Generate SSL Certificates
 
@@ -99,14 +99,10 @@ $ make help
 
 ## Additional Notes
 
-- **Doctrine ORM Integration:** This project uses Doctrine ORM for advanced and flexible database management alongside Laravel.  
-- **Override User IDs:** You can override `USER_ID` and `GROUP_ID` when calling Makefile commands:  
-  `$ make build USER_ID=1000 GROUP_ID=1000`  
-- **Testing & Linting:** Includes PHPUnit, PHPStan, Pint, and more for testing and code style.  
-
-## Requirements
-
-- Docker + Docker Compose
+- **Doctrine ORM Integration:** This project uses Doctrine ORM for advanced and flexible database management alongside Laravel.
+- **Override User IDs:** You can override `USER_ID` and `GROUP_ID` when calling Makefile commands:
+  `$ make build USER_ID=1000 GROUP_ID=1000`
+- **Testing & Linting:** Includes PHPUnit, PHPStan, Pint, and more for testing and code style.
 
 ## License
 
