@@ -49,16 +49,16 @@ $ docker compose \
     up --build -d --remove-orphans
 ```
 
-### 3. Install Composer Dependencies
-
-```
-$ docker compose exec app composer install --prefer-dist --optimize-autoloader
-```
-
-### 4. Prepare Environment File
+### 3. Prepare Environment File
 
 ```
 $ docker compose exec app cp .env.example .env
+```
+
+### 4. Install Composer Dependencies
+
+```
+$ docker compose exec app composer install --prefer-dist --optimize-autoloader
 ```
 
 ### 5. Generate App Key
