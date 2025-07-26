@@ -99,9 +99,7 @@ $ make help
 ## Additional Notes
 
 - **Doctrine ORM Integration:** This project uses Doctrine ORM for advanced and flexible database management alongside Laravel.
-- **Override User IDs:** You can override `USER_ID` and `GROUP_ID` when calling Makefile commands:
-  `$ make build USER_ID=1000 GROUP_ID=1000`
-- **Testing & Linting:** Includes PHPUnit, PHPStan, Pint, and more for testing and code style.
+- **Override User IDs:** You can override `USER_ID` and `GROUP_ID` when calling Makefile commands: `$ make build USER_ID=1000 GROUP_ID=1000`
 
 ## License
 
